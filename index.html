@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학급 축제부스 예약</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>🎪 학급 축제부스 예약</h1>
+    <div class="sub">원하는 부스와 시간대를 골라 예약하세요</div>
+    <nav class="tabs">
+      <a href="index.html" class="active">부스 예약</a>
+      <a href="admin.html">관리자</a>
+    </nav>
+  </header>
+
+  <main>
+    <div style="text-align:right; margin-bottom:8px;">
+      <button class="ghost" id="refreshBtn">🔄 새로고침</button>
+    </div>
+    <div id="boothList"></div>
+  </main>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
